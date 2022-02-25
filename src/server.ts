@@ -22,7 +22,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 app.get("/", (req, res) => {
-  res.send("Servidor rodando. Acessar a partir de '/categories ou '/products'");
+  res.send("Servidor rodando. Acessar a partir de '/products'");
 });
 
 app.post("upload", upload.single("file"), (req, res) => {
