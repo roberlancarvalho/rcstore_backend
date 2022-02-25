@@ -8,6 +8,8 @@ import cors from "cors";
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 app.use(cors());
 
 const storage = multer.diskStorage({
@@ -32,4 +34,4 @@ app.post("upload", upload.single("file"), (req, res) => {
 app.use(express.json());
 app.use(routes);
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+app.listen(port, () => console.log("Server running on port 3000"));
