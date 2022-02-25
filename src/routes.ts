@@ -21,5 +21,6 @@ routes.post("/products", new CreateProductController().handle);
 routes.get("/products", new GetAllProductsController().handle);
 routes.delete("/products/:id", new DeleteProductController().handle);
 routes.put("/products/:id", new UpdateProductController().handle);
+routes.get("/products/:id", new UpdateProductController().handle);
 
 export { routes };
