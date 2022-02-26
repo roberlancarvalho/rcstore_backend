@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=150px height=150px src="https://image.flaticon.com/icons/svg/912/912633.svg" alt="Backend para aplicação RC Store"></a>
+ <img width=150px height=150px src="https://www.flaticon.com/free-icon/tools-and-utensils_423092?term=programmer&page=1&position=8&page=1&position=8&related_id=423092&origin=search" alt="Backend para a aplicação RC Store"></a>
 </p>
 
 <h3 align="center">Backend para aplicação RC Store (CRUD de produtos)</h3>
