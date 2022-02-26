@@ -124,4 +124,4 @@ Para essa aplicação, implementei os seguintes testes:
 - Github: [@roberlancarvalho](https://github.com/roberlancarvalho)
 - LinkedIn: [@roberlancarvalho](https://linkedin.com/in/roberlancarvalho)
 - Instagram: [@roberlancarvalho](https://instagram.com/roberlancarvalho)
-- Twitter: [@RoberlanCarvalh](https://twitter.com/roberlancarvalh)
+- Twitter: [@roberlancarvalh](https://twitter.com/roberlancarvalh)
