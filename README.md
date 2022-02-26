@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="" rel="noopener">
+  <a href="https://github.com/roberlancarvalho/rcstore_backend" rel="noopener">
  <img width=150px height=150px src="https://www.flaticon.com/free-icons/code" alt="Backend para a aplicação RC Store"></a>
 </p>
 
