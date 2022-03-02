@@ -1,10 +1,12 @@
-import "reflect-metadata";
-import express from "express";
 import "./database";
-import { routes } from "./routes";
-import multer from "multer";
-import path from "path";
+import "reflect-metadata";
+
+import bodyParser from "body-parser";
+import multipart from "connect-multiparty";
 import cors from "cors";
+import express from "express";
+
+import { routes } from "./routes";
 
 const app = express();
 
@@ -12,24 +14,17 @@ const port = process.env.PORT || 3000;
 
 app.use(cors());
 
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "uploads/");
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.originalname + Date.now() + path.extname(file.originalname));
-  },
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const multipartMiddleware = multipart({ uploadDir: "./uploads" });
+app.post("/uploads", multipartMiddleware, (req, res) => {
+  const files = req.files;
+  console.log(files);
+  res.json({ messages: files });
 });
 
-const upload = multer({ storage });
-
-app.get("/", (req, res) => {
-  res.send("Servidor rodando. Acessar a partir de '/products'");
-});
-
-app.post("upload", upload.single("file"), (req, res) => {
-  res.send("Arquivo recebido");
-});
+app.use((err, req, res, next) => res.json({ error: err.message }));
 
 app.use(express.json());
 app.use(routes);

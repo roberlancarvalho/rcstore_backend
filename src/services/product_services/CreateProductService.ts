@@ -39,7 +39,7 @@ export class CreateProductService {
       price,
       category_id,
     });
-
+    console.log(product);
     await repo.save(product);
 
     return product;
