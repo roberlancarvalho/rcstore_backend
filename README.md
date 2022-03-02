@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="" rel="noopener">
- <img width=150px height=150px src="https://image.flaticon.com/icons/svg/912/912633.svg" alt="Backend para aplicação RC Store"></a>
+  <a href="https://github.com/roberlancarvalho/rcstore_backend" rel="noopener">
+ <img width=150px height=150px src="https://www.flaticon.com/free-icons/code" alt="Backend para a aplicação RC Store"></a>
 </p>
 
 <h3 align="center">Backend para aplicação RC Store (CRUD de produtos)</h3>
@@ -124,4 +124,4 @@ Para essa aplicação, implementei os seguintes testes:
 - Github: [@roberlancarvalho](https://github.com/roberlancarvalho)
 - LinkedIn: [@roberlancarvalho](https://linkedin.com/in/roberlancarvalho)
 - Instagram: [@roberlancarvalho](https://instagram.com/roberlancarvalho)
-- Twitter: [@RoberlanCarvalh](https://twitter.com/roberlancarvalh)
+- Twitter: [@roberlancarvalh](https://twitter.com/roberlancarvalh)
