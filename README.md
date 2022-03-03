@@ -73,7 +73,7 @@ Executar na raiz do projeto o seguinte comando para instalar as dependências `y
 
 Para executar a API localmente, deve ter um container com Postgress com o nome correto para que o typeorm possa se conectar ao seu banco de dados.
 
-Obs: Usar empplo de arquivo '.env' que está no diretório principal do projeto com o nome ".env.exemple"
+Obs: Usar exemplo de arquivo '.env' com as configurações de banco de dados que estão em um arquivo no diretório principal do projeto com o nome ".env.exemple".
 
 ## 🎈 Uso <a name="usage"></a>
 
