@@ -84,26 +84,6 @@ Para executar a API localmente, deve ter um container com Postgress com o nome c
 yarn dev
 ```
 
-## 🔧 Executando os testes <a name = "tests"></a>
-
-```sh
-yarn test
-```
-
-### Sobre os testes
-
-Para essa aplicação, implementei os seguintes testes:
-
-- **`should be able to create a new tool`**: Para que esse teste passe, a aplicação deve permitir que uma ferramenta seja criada, e retorne um json com a ferramenta criada.
-
-- **`should be able to list the tools`**: Para que esse teste passe, a aplicação deve permitir que seja retornado um array contendo todas as ferramentas.
-
-- **`should be able to list tools with tag filter`**: Para que esse teste passe, sua aplicação deve permitir que seja retornado um objeto contendo todas as ferramentas que contém a tag passada na rota.
-
-- **`should be able to delete a tool`**: Para que esse teste passe, a aplicação deve permitir deletar uma ferramenta.
-
-- **`should not be able to delete a nonexistent tool`**: Para que esse teste passe, a aplicação não deve permitir deletar uma ferramenta que não exista.
-
 ## ⛏️ Construído utilizando <a name = "built_using"></a>
 
 - [NodeJs](https://nodejs.org/en/)
