@@ -60,9 +60,6 @@ Criado com requisitos baseados no teste da [JET E-commerce](https://www.jetecomm
 
 - **`PUT /tools/{id}`**: Rota para deletar um produto específico.
 
-## 🚀 Deploy<a name = "deploy"></a>
-
-Você pode utilizar a API, está aqui: `http://api-app-rc-store.herokuapp.com`
 
 ## Como contribuir?
 
@@ -90,7 +87,6 @@ yarn dev
 - [Typescript](https://www.typescriptlang.org/)
 - [Typeorm](https://typeorm.io/#/)
 - [Postgress](https://www.postgresql.org/)
-- [Swagger](https://swagger.io/)
 
 ### Bibliotecas/Frameworks
 
