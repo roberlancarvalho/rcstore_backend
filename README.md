@@ -50,15 +50,13 @@ Criado com requisitos baseados no teste da [JET E-commerce](https://www.jetecomm
 
 ### Rotas da Aplicação
 
-- **`POST /tools`**: Rota para cadastrar um novo produto. O corpo da requisição deve conter as informações da do produto a ser cadastrado, sem o ID (gerado automaticamente pelo servidor).
+- **`POST /products`**: Rota para cadastrar um novo produto. O corpo da requisição deve conter as informações da do produto a ser cadastrado, sem o ID (gerado automaticamente pelo servidor).
 
-- **`GET /tools`**: Rota para listar todos os produtos.
+- **`GET /products`**: Rota para listar todos os produtos.
 
-- **`GET /tools?id={id}`**: Rota para listar produtos utilizando uma busca por ID, ou seja, filtrando as ferramentas de acordo com a tag recebida.
+- **`DELETE /products/{id}`**: Rota para deletar um produto específico.
 
-- **`DELETE /tools/{id}`**: Rota para deletar um produto específico.
-
-- **`PUT /tools/{id}`**: Rota para deletar um produto específico.
+- **`PUT /products/{id}`**: Rota para editar um produto.
 
 
 ## Como contribuir?
@@ -74,6 +72,8 @@ Ter instalado pelo menos um gerenciador de pacotes do Node, [Npm](https://www.np
 Executar na raiz do projeto o seguinte comando para instalar as dependências `yarn install` ou `npm install`
 
 Para executar a API localmente, deve ter um container com Postgress com o nome correto para que o typeorm possa se conectar ao seu banco de dados.
+
+Obs: Usar empplo de arquivo '.env' que está no diretório principal do projeto com o nome ".env.exemple"
 
 ## 🎈 Uso <a name="usage"></a>
 
