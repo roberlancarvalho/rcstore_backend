@@ -35,19 +35,7 @@ export class CreateProducts1645246835988 implements MigrationInterface {
           {
             name: "price",
             type: "decimal",
-          },
-          {
-            name: "category_id",
-            type: "uuid",
-          },
-        ],
-        foreignKeys: [
-          {
-            name: "fk_products_category",
-            columnNames: ["category_id"],
-            referencedTableName: "categories",
-            referencedColumnNames: ["id"],
-          },
+          }
         ],
       })
     );

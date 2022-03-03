@@ -5,7 +5,7 @@ export class UpdateProductController {
   async handle(request: Request, response: Response) {
     const { id } = request.params;
 
-    const { name, image, description, stock, status, price, category_id } =
+    const { name, image, description, stock, status, price } =
       request.body;
 
     const service = new UpdateProductService();
@@ -18,7 +18,6 @@ export class UpdateProductController {
       stock,
       status,
       price,
-      category_id,
     });
 
     if (result instanceof Error) {

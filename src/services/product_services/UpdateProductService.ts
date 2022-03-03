@@ -9,7 +9,6 @@ type ProductUpdateRequest = {
   stock: number;
   status: boolean;
   price: number;
-  category_id: string;
 };
 
 export class UpdateProductService {

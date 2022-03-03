@@ -1,5 +1,5 @@
 import { getRepository } from "typeorm";
-import { Category } from "../../entities/Category";
+// import { Category } from "../../entities/Category";
 import { Product } from "../../entities/Products";
 
 type ProductRequest = {
@@ -9,7 +9,6 @@ type ProductRequest = {
   stock: number;
   status: boolean;
   price: number;
-  category_id: string;
 };
 
 export class CreateProductService {
@@ -20,15 +19,8 @@ export class CreateProductService {
     stock,
     status,
     price,
-    category_id,
   }: ProductRequest): Promise<Error | Product> {
     const repo = getRepository(Product);
-
-    const repoCategory = getRepository(Category);
-
-    if (!(await repoCategory.findOne(category_id))) {
-      return new Error("Essa categoria não existe");
-    }
 
     const product = repo.create({
       name,
@@ -37,7 +29,6 @@ export class CreateProductService {
       stock,
       status,
       price,
-      category_id,
     });
     console.log(product);
     await repo.save(product);

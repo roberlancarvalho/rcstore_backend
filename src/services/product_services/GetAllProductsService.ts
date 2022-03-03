@@ -6,7 +6,7 @@ export class GetAllProductsService {
     const repo = getRepository(Product);
 
     const products = await repo.find({
-      relations: ["category"],
+    
     });
 
     return products;

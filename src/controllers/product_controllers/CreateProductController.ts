@@ -3,7 +3,7 @@ import { CreateProductService } from "../../services/product_services/CreateProd
 
 export class CreateProductController {
   async handle(request: Request, response: Response) {
-    const { name, image, description, stock, status, price, category_id } =
+    const { name, image, description, stock, status, price } =
       request.body;
 
     const service = new CreateProductService();
@@ -15,7 +15,6 @@ export class CreateProductController {
       stock,
       status,
       price,
-      category_id,
     });
 
     if (result instanceof Error) {
