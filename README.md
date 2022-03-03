@@ -29,7 +29,6 @@
 
 - [Sobre](#about)
 - [Iniciando](#getting_started)
-- [Deploy](#deploy)
 - [Uso](#usage)
 - [Construído utilizando](#built_using)
 - [Authors](#authors)
