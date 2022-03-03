@@ -30,7 +30,6 @@
 - [Sobre](#about)
 - [Iniciando](#getting_started)
 - [Deploy](#deploy)
-- [Testes](#tests)
 - [Uso](#usage)
 - [Construído utilizando](#built_using)
 - [Authors](#authors)
