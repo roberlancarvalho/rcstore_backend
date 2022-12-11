@@ -29,8 +29,6 @@
 
 - [Sobre](#about)
 - [Iniciando](#getting_started)
-- [Deploy](#deploy)
-- [Testes](#tests)
 - [Uso](#usage)
 - [Construído utilizando](#built_using)
 - [Authors](#authors)
@@ -50,19 +48,14 @@ Criado com requisitos baseados no teste da [JET E-commerce](https://www.jetecomm
 
 ### Rotas da Aplicação
 
-- **`POST /tools`**: Rota para cadastrar um novo produto. O corpo da requisição deve conter as informações da do produto a ser cadastrado, sem o ID (gerado automaticamente pelo servidor).
+- **`POST /products`**: Rota para cadastrar um novo produto. O corpo da requisição deve conter as informações da do produto a ser cadastrado, sem o ID (gerado automaticamente pelo servidor).
 
-- **`GET /tools`**: Rota para listar todos os produtos.
+- **`GET /products`**: Rota para listar todos os produtos.
 
-- **`GET /tools?id={id}`**: Rota para listar produtos utilizando uma busca por ID, ou seja, filtrando as ferramentas de acordo com a tag recebida.
+- **`DELETE /products/{id}`**: Rota para deletar um produto específico.
 
-- **`DELETE /tools/{id}`**: Rota para deletar um produto específico.
+- **`PUT /products/{id}`**: Rota para editar um produto.
 
-- **`PUT /tools/{id}`**: Rota para deletar um produto específico.
-
-## 🚀 Deploy<a name = "deploy"></a>
-
-Você pode utilizar a API, está aqui: `http://api-app-rc-store.herokuapp.com`
 
 ## Como contribuir?
 
@@ -78,31 +71,13 @@ Executar na raiz do projeto o seguinte comando para instalar as dependências `y
 
 Para executar a API localmente, deve ter um container com Postgress com o nome correto para que o typeorm possa se conectar ao seu banco de dados.
 
+Obs: Usar exemplo de arquivo '.env' com as configurações de banco de dados que estão em um arquivo no diretório principal do projeto com o nome ".env.exemple".
+
 ## 🎈 Uso <a name="usage"></a>
 
 ```sh
 yarn dev
 ```
-
-## 🔧 Executando os testes <a name = "tests"></a>
-
-```sh
-yarn test
-```
-
-### Sobre os testes
-
-Para essa aplicação, implementei os seguintes testes:
-
-- **`should be able to create a new tool`**: Para que esse teste passe, a aplicação deve permitir que uma ferramenta seja criada, e retorne um json com a ferramenta criada.
-
-- **`should be able to list the tools`**: Para que esse teste passe, a aplicação deve permitir que seja retornado um array contendo todas as ferramentas.
-
-- **`should be able to list tools with tag filter`**: Para que esse teste passe, sua aplicação deve permitir que seja retornado um objeto contendo todas as ferramentas que contém a tag passada na rota.
-
-- **`should be able to delete a tool`**: Para que esse teste passe, a aplicação deve permitir deletar uma ferramenta.
-
-- **`should not be able to delete a nonexistent tool`**: Para que esse teste passe, a aplicação não deve permitir deletar uma ferramenta que não exista.
 
 ## ⛏️ Construído utilizando <a name = "built_using"></a>
 
@@ -110,7 +85,6 @@ Para essa aplicação, implementei os seguintes testes:
 - [Typescript](https://www.typescriptlang.org/)
 - [Typeorm](https://typeorm.io/#/)
 - [Postgress](https://www.postgresql.org/)
-- [Swagger](https://swagger.io/)
 
 ### Bibliotecas/Frameworks
 
@@ -121,6 +95,7 @@ Para essa aplicação, implementei os seguintes testes:
 
 👤 **Roberlan Carvalho**
 
+- Site/Portfólio: [roberlancarvalho.com](https://roberlancarvalho.com/)
 - Github: [@roberlancarvalho](https://github.com/roberlancarvalho)
 - LinkedIn: [@roberlancarvalho](https://linkedin.com/in/roberlancarvalho)
 - Instagram: [@roberlancarvalho](https://instagram.com/roberlancarvalho)
